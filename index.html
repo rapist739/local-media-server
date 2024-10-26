@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Указываем язык страницы -->
+<head>
+    <meta charset="UTF-8"> <!-- Устанавливаем кодировку символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Поддержка мобильных устройств -->
+    <title>Список сериалов</title> <!-- Заголовок страницы -->
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем файл стилей -->
+</head>
+<body>
+    <h1>Список сериалов</h1> <!-- Заголовок для страницы -->
+    <div id="series-list"></div> <!-- Контейнер для списка сериалов -->
+
+    <div id="player-container" style="display: none;"> <!-- Контейнер для плеера (по умолчанию скрыт) -->
+        <h2 id="selected-title"></h2> <!-- Заголовок выбранного сериала -->
+        <video id="video-player" controls> <!-- Видеоплеер с элементами управления -->
+            <source id="video-source" src="" type="video/mp4"> <!-- Элемент source для видео -->
+            Ваш браузер не поддерживает видео. <!-- Сообщение для неподдерживаемых браузеров -->
+        </video>
+        <button onclick="closePlayer()">Закрыть плеер</button> <!-- Кнопка для закрытия плеера -->
+    </div>
+
+    <script src="script.js"></script> <!-- Подключаем файл скриптов -->
+</body>
+</html>

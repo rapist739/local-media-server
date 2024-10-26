@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif; /* Определяем шрифт для страницы */
+    margin: 0; /* Убираем отступы */
+    padding: 20px; /* Устанавливаем отступы */
+    background-color: #f4f4f4; /* Цвет фона */
+  }
+  
+  h1 {
+    color: #333; /* Цвет заголовка */
+  }
+  
+  #series-list {
+    display: flex; /* Используем flexbox для расположения элементов в ряд */
+    flex-wrap: wrap; /* Переносим элементы на новую строку при необходимости */
+  }
+  
+  .series-item {
+    background: #fff; /* Цвет фона для элементов списка */
+    border: 1px solid #ddd; /* Обводка вокруг элемента */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px; /* Внутренние отступы */
+    margin: 10px; /* Внешние отступы между элементами */
+    cursor: pointer; /* Курсор указывает, что элемент можно выбрать */
+    width: calc(25% - 20px); /* Ширина элемента со вычислением отступов */
+    text-align: center; /* Выравнивание текста по центру */
+  }
+  
+  .series-item:hover {
+    background: #eaeaea; /* Цвет при наведении */
+  }
+  
+  #player-container {
+    margin-top: 20px; /* Отступ сверху для контейнера плеера */
+  }
